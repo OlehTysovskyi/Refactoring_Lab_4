@@ -14,4 +14,8 @@ export default class Menu {
     getAllDishes() {
         return this.dishes;
     }
+
+    removeDish(dishName) {
+    this.dishes = this.dishes.filter(d => d.name !== dishName);
+  }
 }
