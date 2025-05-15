@@ -1,8 +1,11 @@
-class OrderDatabaseSingleton {
+import IOrderDatabase from '../interfaces/IOrderDatabase.js';
+
+class OrderDatabaseSingleton extends IOrderDatabase {
   constructor() {
     if (OrderDatabaseSingleton.instance) {
       return OrderDatabaseSingleton.instance;
     }
+    super();
     this.orders = [];
     OrderDatabaseSingleton.instance = this;
   }
@@ -23,4 +26,4 @@ class OrderDatabaseSingleton {
   }
 }
 
-module.exports = OrderDatabaseSingleton;
+export default OrderDatabaseSingleton;

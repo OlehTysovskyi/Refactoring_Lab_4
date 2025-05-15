@@ -1,17 +1,17 @@
 export default class Menu {
-  constructor() {
-    this.dishes = [];
-  }
+    constructor() {
+        this.dishes = [];
+    }
 
-  addDish(dish) {
-    this.dishes.push(dish);
-  }
+    addDish(dish) {
+        this.dishes.push(dish);
+    }
 
-  containsDish(dish) {
-    return this.dishes.includes(dish);
-  }
+    containsDish(dish) {
+        return this.dishes.includes(dish);
+    }
 
-  getAllDishes() {
-    return this.dishes;
-  }
+    getAllDishes() {
+        return this.dishes;
+    }
 }

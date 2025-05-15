@@ -1,5 +1,4 @@
-module.exports = {
-  transform: {
-    '^.+\\.js$': 'babel-jest',
-  },
+export default {
+  testEnvironment: "node",
+  coverageDirectory: "coverage",
 };

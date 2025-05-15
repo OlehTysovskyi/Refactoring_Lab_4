@@ -18,3 +18,4 @@ export default class Order {
     return this.total;
   }
 }
+
