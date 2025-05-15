@@ -1,4 +1,4 @@
-class Menu {
+export default class Menu {
   constructor() {
     this.dishes = [];
   }
@@ -15,5 +15,3 @@ class Menu {
     return this.dishes;
   }
 }
-
-module.exports = Menu;
